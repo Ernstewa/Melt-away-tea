@@ -1083,7 +1083,7 @@
                     <img src="../Images/IMG_1239.PNG" alt="Detox Green Tea" class="product-img">
                     <div class="product-info">
                         <span class="product-category">Weight Loss Tea</span>
-                        <h3>Detox me Tea</h3>
+                        <h3>Detox Me Tea</h3>
                         <div class="product-rating">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -1095,7 +1095,7 @@
                         <p class="product-description">A blend of fruits, vegetables and herbs that relieves bloating, regulates bowel movement, and removes toxins from your gut.</p>
                         <div class="product-footer">
                             <div class="product-price">$24.99 <span>$34.99</span></div>
-                            <button class="add-to-cart" data-product="MetaboBoost Green Tea">
+                            <button class="add-to-cart" data-product="Detox Me Tea">
                                 <i class="fas fa-plus"></i>
                             </button>
                         </div>
@@ -1120,7 +1120,7 @@
                         <p class="product-description">Keeps you fuller for long. Stops cravings. Contains omega 3-fatty acid, fibers, protiens, seeds and superfoods, fastens the effectiveness of our tsas (also suitable for nursing mums).</p>
                         <div class="product-footer">
                             <div class="product-price">$39.99</div>
-                            <button class="add-to-cart" data-product="ThermoBurn Capsules">
+                            <button class="add-to-cart" data-product="Magic Combo">
                                 <i class="fas fa-plus"></i>
                             </button>
                         </div>
@@ -1132,7 +1132,7 @@
                     <img src="../Images/IMG_5679.PNG" alt="Detox Tea" class="product-img">
                     <div class="product-info">
                         <span class="product-category">Weight Loss Tea</span>
-                        <h3>Yummy mummy Tea</h3>
+                        <h3>Yummy Mummy Tea</h3>
                         <div class="product-rating">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -1144,7 +1144,7 @@
                         <p class="product-description">For breast feeding mums. Its safe to start taking immediately after birth. Eases indigestion. Boosts milk supply. Helps lose postpartum weight, belly fat and big arms.</p>
                         <div class="product-footer">
                             <div class="product-price">$19.99 <span>$29.99</span></div>
-                            <button class="add-to-cart" data-product="Overnight Detox Tea">
+                            <button class="add-to-cart" data-product="Yummy Mummy Tea">
                                 <i class="fas fa-plus"></i>
                             </button>
                         </div>
@@ -1156,7 +1156,7 @@
                     <img src="../Images/IMG_5682.PNG" alt="Appetite Suppressant" class="product-img">
                     <div class="product-info">
                         <span class="product-category">Weight Loss Tea</span>
-                        <h3>Tummy tuck Tea</h3>
+                        <h3>Tummy Tuck Tea</h3>
                         <div class="product-rating">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -1169,7 +1169,7 @@
                            Removes excess water retention.</p>
                         <div class="product-footer">
                             <div class="product-price">$34.99</div>
-                            <button class="add-to-cart" data-product="CraveControl Capsules">
+                            <button class="add-to-cart" data-product="Tummy Tuck Tea">
                                 <i class="fas fa-plus"></i>
                             </button>
                         </div>
@@ -1194,7 +1194,7 @@
                         <p class="product-description">Curb appetite. Reduce bloating fast. Target belly fat. Feel lighter & confident - in just 2 weeks.</p>
                         <div class="product-footer">
                             <div class="product-price">$79.99 <span>$106.99</span></div>
-                            <button class="add-to-cart" data-product="Weight Loss Starter Kit">
+                            <button class="add-to-cart" data-product="Weight Loss Powerful Trio">
                                 <i class="fas fa-plus"></i>
                             </button>
                         </div>
@@ -1219,7 +1219,7 @@
                            Blocks excess carbohydrates.</p>
                         <div class="product-footer">
                             <div class="product-price">$27.99</div>
-                            <button class="add-to-cart" data-product="Metabolism Herbal Blend">
+                            <button class="add-to-cart" data-product="Super appetite suppressant">
                                 <i class="fas fa-plus"></i>
                             </button>
                         </div>
@@ -1441,7 +1441,7 @@
         // Add to cart functionality
         const addToCartButtons = document.querySelectorAll('.add-to-cart');
         const cartCount = document.querySelector('.cart-count');
-        let cartItems = 3; // Starting with 3 items
+        let cartItems = 0; // Starting with 3 items
         
         addToCartButtons.forEach(button => {
             button.addEventListener('click', () => {
@@ -1457,7 +1457,7 @@
                 cartCount.style.transform = 'scale(1.5)';
                 
                 // Show notification
-                showNotification(`${productName} added to cart!`);
+                showNotification(`${productName} added to wishlist!`);
                 
                 // Reset button after animation
                 setTimeout(() => {
